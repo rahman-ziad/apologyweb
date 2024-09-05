@@ -1,16 +1,28 @@
 import { useRef, useEffect, useState } from 'react';
-import moon from './section-1.webp';
-import land from './section-3.webp';
-import hill from './section-2.webp';
-import cat from './bear.gif';
-import rainSound from './rain1.mp3';
+import moon from './section-1.webp'; // first picture
+import land from './section-3.webp'; //second picture
+import hill from './section-2.webp'; //third picture 
+import cat from './bear.gif'; // bear with parachute 
+import rainSound from './rain1.mp3'; // change this if you want to add your custom music
 import Preview from './Preview';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Sorry from './Sorry';
 import Slider from './Slider';
 import Playerv from './playerv';
-import { FaHeadphones, FaDesktop } from 'react-icons/fa'; // Importing icons
+import { FaHeadphones, FaDesktop } from 'react-icons/fa'; 
 
+
+// Text variables, change those according to your needs
+const TEXT = {
+  popupHeading: "Embark on a Heartfelt Journey",
+  popupText: "Best experienced on desktop. Use earphones for an immersive experience.",
+  button: "Let's Begin",
+  section1: "Hey there",
+  section2: "I wanna say something",
+  section3: "And that is abcdefghijklmnopqrstuvwxyz",
+};
+
+// dont change anything from here if you have no idea whats going on.
 function App() {
   const [showPopup, setShowPopup] = useState(true);
   const audioRef = useRef(new Audio(rainSound));
@@ -65,12 +77,12 @@ function App() {
       {showPopup && (
         <div style={popupStyle}>
           <div style={cardStyle}>
-            <h2 style={popupHeadingStyle}>Embark on a Heartfelt Journey</h2>
+            <h2 style={popupHeadingStyle}>{TEXT.popupHeading}</h2>
             <p style={popupTextStyle}>
-              <FaDesktop style={iconStyle} /> Best experienced on desktop. <br />
-              <FaHeadphones style={iconStyle} /> Use earphones for an immersive experience.
+              <FaDesktop style={iconStyle} /> {TEXT.popupText} <br />
+              <FaHeadphones style={iconStyle} />
             </p>
-            <button onClick={handleStart} style={buttonStyle}>Let's Begin</button>
+            <button onClick={handleStart} style={buttonStyle}>{TEXT.button}</button>
           </div>
         </div>
       )}
@@ -170,17 +182,17 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.2} speed={0.15}>
-          <h2>I'm SORRY, SANZIDA</h2>
+          <h2>{TEXT.section1}</h2>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.5} speed={2}>
-          <h2>Please, forgive me!</h2>
+          <h2>{TEXT.section2}</h2>
         </ParallaxLayer>
         <ParallaxLayer
           offset={2.5}
           speed={1.5}
         >
-          <h3>ACCEPT THIS HEARTFELT APOLOGY, PLEASE!!!</h3>
+          <h3>{TEXT.section3}</h3>
         </ParallaxLayer>
         
       </Parallax>
@@ -233,9 +245,6 @@ const buttonStyle = {
   borderRadius: '5px',
   boxShadow: '0px 0px 10px rgba(255, 255, 255, 0.3)',
 };
-
-
-
 
 const iconStyle = {
   marginRight: '8px',
