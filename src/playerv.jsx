@@ -1,5 +1,7 @@
+// go to line 95 to add custom heading for this sections
+// go to line 96 and change "what?" to change the button text
 import React from 'react';
-import srcVideo from './video.mp4';
+import srcVideo from './video.mp4'; // add your custom videos here. rename video file to video.mp4 and drop your video file on src folder  
 const Playerv = () => {
   const htmlCode = `
    

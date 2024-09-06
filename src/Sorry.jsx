@@ -1,7 +1,13 @@
+// edit those according to your needs
 import React from 'react';
-import nope from './nope.mp3';
-import yes from './yes.mp3';
-import SorryImg from './pls.gif';
+import nope from './nope.mp3'; //nope sound effect
+import yes from './yes.mp3'; //yes sound effect
+import SorryImg from './pls.gif'; //cat image gif 
+
+// go to line 167 to edit the heading
+// edit line 183 and 184 for firebase setup, if you want to see if s/he pressed yes or not
+// go to line 257 and add your text there, after pressign yes button it will show this msg
+// go to line 280, 287, 294, 301 and replace with your social links
 const Sorry = () => {
   const htmlCode = `
     <!DOCTYPE html>
@@ -9,7 +15,7 @@ const Sorry = () => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Will You Go on a Date With Me?</title>
+      <title></title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
       <link rel="icon" href="https://em-content.zobj.net/source/skype/289/red-heart_2764-fe0f.png" type="image/x-icon">
@@ -161,7 +167,7 @@ const Sorry = () => {
     </head>
     <body>
       <header id="main">
-        <h1>Will You Forgive Me, 🧠🤝? 🥺</h1>
+        <h1>Your heading here</h1>
       </header>
       <main>
         <canvas id="confetti-canvas"></canvas>
@@ -175,10 +181,10 @@ const Sorry = () => {
       </main>
       <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
      <script>
-  // Define the notify function to use the Firebase Realtime Database
+  // change this database url and ref with your creds
   window.notifyYesClicked = () => {
-    const databaseURL = 'https://myapp-e5581-default-rtdb.asia-southeast1.firebasedatabase.app/'; // Replace with your Firebase Realtime Database URL
-    const ref = '/response'; // Replace with your Firebase Realtime Database path
+    const databaseURL = ''; // Replace with your Firebase Realtime Database URL
+    const ref = ''; // Replace with your Firebase Realtime Database path
 
     const timestamp = new Date().toISOString();
     const userAgent = navigator.userAgent;
@@ -249,7 +255,7 @@ const Sorry = () => {
     confetti.render();
 
     const p = document.createElement("p");
-    p.innerText = "Thank You So Much! 🎉 \\nYour forgiveness means the world to me.\\nLet’s reconnect and create new memories together. 💖🌟";
+    p.innerText = "Thank You So Much! 🎉 \\n 2nd line \\n 3rd line 💖🌟";
     p.style.fontSize = "2rem";
     p.style.fontWeight = "bold";
     p.style.textAlign = "center";
@@ -271,21 +277,21 @@ const Sorry = () => {
     linksContainer.style.zIndex = "1001"; // Ensure icons are above other elements
 
     const facebookLink = document.createElement("a");
-    facebookLink.href = "https://www.facebook.com/m.rahmanziad";
+    facebookLink.href = "https://www.facebook.com/m.rahmanziad"; // Replace with your Facebook link
     facebookLink.target = "_blank";
     facebookLink.innerHTML = '<i class="fab fa-facebook-f"></i>';
     facebookLink.style.margin = "0 15px";
     facebookLink.style.color = "#3b5998";
 
     const instagramLink = document.createElement("a");
-    instagramLink.href = "https://www.instagram.com/rz_iad/";
+    instagramLink.href = "https://www.instagram.com/rz_iad/"; // Replace with your Instagram link
     instagramLink.target = "_blank";
     instagramLink.innerHTML = '<i class="fab fa-instagram"></i>';
     instagramLink.style.margin = "0 15px";
     instagramLink.style.color = "#C13584";
 
     const whatsappLink = document.createElement("a");
-    whatsappLink.href = "https://wa.me/01521712644";
+    whatsappLink.href = "https://wa.me/01521712644"; // Replace with your Whatsapp link
     whatsappLink.target = "_blank";
     whatsappLink.innerHTML = '<i class="fab fa-whatsapp"></i>';
     whatsappLink.style.margin = "0 15px";

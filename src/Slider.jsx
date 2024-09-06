@@ -1,3 +1,16 @@
+// this section is for the slider to show the best memories you spent with him/ her
+// go to line 125, 126, 127 to add your heading, sub-heading and a small text
+// to get started go to https://bulkresizephotos.com/en and upload 12 images 
+//select image dimensions and make them 800x1100 pixels for better result 
+// hit start and download the file. 
+// upload them on https://imgbb.com/ you can upload free images here, upload them all at once, also sign in there to generate direct links
+// press dont auto dlt or change it as you want
+// after uploading select direct links from embed code
+// save those links
+// go to line 130 and place those links one by one  on src
+// src="your link goes here"
+// save this file after doing so and you are good to go
+
 import React from 'react';
 
 const Slider = () => {
@@ -117,18 +130,18 @@ const Slider = () => {
       Every moment we've shared has been a treasure. I can't bear to lose such a wonderful friend and our priceless friendship..
     </p>
     <div class="carousel">
-      <div><img src="https://i.ibb.co/Jdfdzj5/image.jpg" alt="Image 1"></div>
-      <div><img src="https://i.ibb.co/w4y49zz/1.jpg" alt="Image 2"></div>
-      <div><img src="https://i.ibb.co/JzcxTn3/2.jpg" alt="Image 3"></div>
-      <div><img src="https://i.ibb.co/GJqRWT8/3.jpg" alt="Image 4"></div>
-      <div><img src="https://i.ibb.co/GCzPRDv/4.jpg" alt="Image 5"></div>
-      <div><img src="https://i.ibb.co/8gbnc2H/5.jpg" alt="Image 6"></div>
-      <div><img src="https://i.ibb.co/X2VMTgp/6.jpg" alt="Image 7"></div>
-      <div><img src="https://i.ibb.co/jgp7X17/7.jpg" alt="Image 8"></div>
-      <div><img src="https://i.ibb.co/VHqZtHV/8.jpg" alt="Image 9"></div>
-      <div><img src="https://i.ibb.co/hc0MBYD/9.jpg" alt="Image 10"></div>
-      <div><img src="https://i.ibb.co/YRwynxZ/10.jpg" alt="Image 11"></div>
-      <div><img src="https://i.ibb.co/G3f329n/11.jpg" alt="Image 12"></div>
+      <div><img src="https://i.ibb.co/6b370jM/Designer-1.jpg" alt="Image 1"></div> 
+      <div><img src="https://i.ibb.co/v4NF8wX/Designer-2.jpg" alt="Image 2"></div>
+      <div><img src="https://i.ibb.co/DpByRtf/Designer-3.jpg" alt="Image 3"></div>
+      <div><img src="https://i.ibb.co/xXdwxsf/Designer-4.jpg" alt="Image 4"></div>
+      <div><img src="https://i.ibb.co/K2dW8yd/Designer-5.jpg" alt="Image 5"></div>
+      <div><img src="https://i.ibb.co/F39vxfL/Designer-6.jpg" alt="Image 6"></div>
+      <div><img src="https://i.ibb.co/KGbFrH5/Designer-7.jpg" alt="Image 7"></div>
+      <div><img src="https://i.ibb.co/r4fwQdk/Designer-8.jpg" alt="Image 8"></div>
+      <div><img src="https://i.ibb.co/QXKNfnb/Designer-9.jpg" alt="Image 9"></div>
+      <div><img src="https://i.ibb.co/7jwJFFL/Designer-10.jpg" alt="Image 10"></div>
+      <div><img src="https://i.ibb.co/wsCYkZZ/Designer-11.jpg" alt="Image 11"></div>
+      <div><img src="https://i.ibb.co/Nn8w7Lw/Designer-12.jpg" alt="Image 12"></div>
     </div>
   </div>
 

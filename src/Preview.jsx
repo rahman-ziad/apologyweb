@@ -1,6 +1,7 @@
-// src/Preview.jsx
+// go to line 343 and change the text on <p> </p> tag.  ex: <p> text area </p>
+// repeat above step for line  345, 351,357, 358, 360 and 361
 import React from 'react';
-import letter from './letter.mp3';
+import letter from './letter.mp3'; //change this if you want to add custom sound while opening the envelope
 const Preview = () => {
   const htmlCode = `
     <!DOCTYPE html>
@@ -340,24 +341,21 @@ const Preview = () => {
                         <div class="love-notes">
                             <div class="note js-note">
                                 <div class="note__text">
-                                    <p ;">Hey Sanzida</p>
-                                    <p> I hope you are in sound health & mind. 
-I would like to apologize for my comment regarding the pictures that you sent me a few days ago. I realized that my words may have come across as insensitive and dismissive. It was not intended to hurt your feelings or make you feel as if you were obligated to send me anything special.</p>
+                                    <p> Hey x</p>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a mi dictum, iaculis diam et, efficitur enim. Pellentesque placerat et sem in laoreet. Vivamus eleifend ultrices fringilla. Duis feugiat vulputate turpis vitae varius. Sed dapibus elit eget ligula tempus ultrices. Aenean vel nibh quam. Etiam interdum posuere mi id maximus. Nullam id eros id purus commodo malesuada.</p>
                                 </div>
                             </div>
                             <div class="note js-note">
                                 <div class="note__text">
-                                    <p>I understand why you might have felt upset with my comment, and it was not my place to question your choices. You have every right to share your photos however and wherever you want, and I regret making you feel as though you needed to provide me with something special.
-I am sorry for that and I apologize.I hope you know how much I value our friendship and that your feelings matter to me.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a mi dictum, iaculis diam et, efficitur enim. Pellentesque placerat et sem in laoreet. Vivamus eleifend ultrices fringilla. Duis feugiat vulputate turpis vitae varius. Sed dapibus elit eget ligula tempus ultrices. Aenean vel nibh quam. Etiam interdum posuere mi id maximus. Nullam id eros id purus commodo malesuada.</p>
                                 </div>
                             </div>
                             <div class="note js-note">
                                 <div class="note__text">
-                                    <p> I hope you will forgive me for my thoughtless words. I’d love to talk things over and rebuild the trust that may have been hurt.</p>
-                                    <p>Thank you for considering my apology. I genuinely hope to hear from you soon.</p>
-                                    </br>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a mi dictum, iaculis diam et, efficitur enim.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     <p >With all my heart</p>
-                                    <p >Ziad</p>
+                                    <p > your name </p>
                                 </div>
                             </div>
                         </div>

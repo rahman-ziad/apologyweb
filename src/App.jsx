@@ -1,9 +1,10 @@
+
 import { useRef, useEffect, useState } from 'react';
-import moon from './section-1.webp'; // first picture
-import land from './section-3.webp'; //second picture
-import hill from './section-2.webp'; //third picture 
-import cat from './bear.gif'; // bear with parachute 
-import rainSound from './rain1.mp3'; // change this if you want to add your custom music
+import moon from './components/section-1.webp'; // first picture
+import hill from './components/section-2.webp'; //second picture
+import land from './components/section-3.webp';  //third picture 
+import Bear from './components/bear.gif'; // bear with parachute 
+import rainSound from './components/rain1.mp3'; // change this if you want to add your custom music
 import Preview from './Preview';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import Sorry from './Sorry';
@@ -15,7 +16,8 @@ import { FaHeadphones, FaDesktop } from 'react-icons/fa';
 // Text variables, change those according to your needs
 const TEXT = {
   popupHeading: "Embark on a Heartfelt Journey",
-  popupText: "Best experienced on desktop. Use earphones for an immersive experience.",
+  popupText: "Best experienced on desktop." ,
+  popupText2: "Use earphones for an immersive experience.",
   button: "Let's Begin",
   section1: "Hey there",
   section2: "I wanna say something",
@@ -80,7 +82,7 @@ function App() {
             <h2 style={popupHeadingStyle}>{TEXT.popupHeading}</h2>
             <p style={popupTextStyle}>
               <FaDesktop style={iconStyle} /> {TEXT.popupText} <br />
-              <FaHeadphones style={iconStyle} />
+              <FaHeadphones style={iconStyle} /> {TEXT.popupText2}
             </p>
             <button onClick={handleStart} style={buttonStyle}>{TEXT.button}</button>
           </div>
@@ -178,7 +180,7 @@ function App() {
           sticky={{ start: 0.9, end: 2.1 }}
           style={{ textAlign: 'center' }}
         >
-          <img src={cat} alt="Cat" />
+          <img src={Bear} alt="Bear" />
         </ParallaxLayer>
 
         <ParallaxLayer offset={0.2} speed={0.15}>
